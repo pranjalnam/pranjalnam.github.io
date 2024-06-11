@@ -122,7 +122,37 @@ const CONFIG = {
     {
       name: 'Introduction to Scalable Systems',
       body: '',
-      year: '2022',
+      year: 'Aug 2022',
+      link: '',
+    },
+    {
+      name: 'Data Analytics',
+      body: '',
+      year: 'Aug 2022',
+      link: '',
+    },
+    {
+      name: 'Scalable Systems for Data Science',
+      body: '',
+      year: 'Jan 2023',
+      link: '',
+    },
+    {
+      name: 'Parallel Programming',
+      body: '',
+      year: 'Jan 2023',
+      link: '',
+    },
+    {
+      name: 'High Performance Computer Architecture',
+      body: '',
+      year: 'Aug 2024',
+      link: '',
+    },
+    {
+      name: 'Matrix Theory',
+      body: '',
+      year: 'Aug 2024',
       link: '',
     },
   ],
