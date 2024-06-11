@@ -120,9 +120,9 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: '',
+      name: 'Introduction to Scalable Systems',
       body: '',
-      year: '',
+      year: '2022',
       link: '',
     },
   ],
