@@ -53,7 +53,7 @@ const CONFIG = {
   },
   seo: {
     title: 'Portfolio of Pranjal Naman',
-    description: 'I am a second-year PhD student specializing in graph neural networks (GNNs), driven by a strong academic background and a deep interest in cutting-edge research. My primary focus lies at the intersection of computer science, graph theory, machine learning, and computer systems, with the aim of unraveling the potential of GNNs and their numerous applications. Through my studies, I am dedicated to developing innovative methodologies, architectures, and techniques that enhance the scalability, interpretability, and predictive capabilities of GNNs.',
+    description: '',
     imageURL: '',
   },
   social: {
