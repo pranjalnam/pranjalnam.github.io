@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -52,31 +52,29 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Pranjal Naman',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
+    linkedin: 'pranjal-naman-136894162',
     twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
     researchGate: '',
     facebook: '',
-    instagram: '',
+    instagram: 'pranjalnam_',
     reddit: '',
     threads: '',
     youtube: '', // example: 'pewdiepie'
-    udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    website: '',
+    phone: '+91-9871402280',
+    email: 'pranjalnaman@iisc.ac.in',
   },
   resume: {
     fileUrl:
@@ -100,66 +98,87 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Nucleus Software',
+      position: 'Software Developer Intern',
+      from: 'May 2019',
+      to: 'July 2019',
+      companyLink: '',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
+      company: 'Soroco',
+      position: 'Software Developer',
+      from: 'October 2020',
       to: 'August 2021',
-      companyLink: 'https://example.com',
+      companyLink: '',
+    },
+    {
+      company: 'DREAM Lab, Indian Institute of Science',
+      position: 'PhD Student',
+      from: 'August 2022',
+      to: 'Present',
+      companyLink: '',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: '',
+      body: '',
+      year: '',
+      link: '',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Netaji Subhas Institute of Technology (NSIT), Delhi',
+      degree: 'Bachelor's in Engineering (B.E.)',
+      from: '2016',
+      to: '2020',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Indian Institute of Science, Bengaluru',
+      degree: 'Doctor of Philosophy (Ph.D.)',
+      from: '2022',
+      to: 'Present',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Evaluating Strategies for Federated Graph Learning',
+      conferenceName: '2023 IEEE 30th International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW)',
+      journalName: '',
+      authors: 'Pranjal Naman, Suved Sanjay Ghanmode, Yogesh Simmhan',
+      link: 'https://www.computer.org/csdl/proceedings-article/hipcw/2023/837800a065/1WnrOX5H7hK',
+      description: 'Rapid advancements in the field of Graph Neural Networks (GNNs) have led to their high effectiveness at learning meaningful representations from graph data structures. Despite these advances, there are cases where graph data cannot be collected and stored centrally, owing mostly to privacy concerns. Federated Learning (FL) has emerged as a promising machine learning paradigm for distributed training of a shared model on decentralized data. This exploits parallelism and ensures privacy of the local training data on each client. In this paper, we explore the different communication and architectural patterns for FL when training GNNs and their effect on training time.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
+      title: 'Performance Modelling of Graph Neural Networks',
+      conferenceName: '2023 IEEE/ACM 23rd International Symposium on Cluster, Cloud and Internet Computing Workshops (CCGridW)',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      authors: 'Pranjal Naman, Yogesh Simmhan',
+      link: 'http://doi.org/10.1109/CCGridW59191.2023.00076',
+      description: 'In this poster paper, we present a preliminary analysis of the computational cost of the forward pass on GraphConv and GraphSAGE GNN models. We verify our estimates empirically by profiling the forward pass on these architectures using graph datasets of varying sizes and properties.',
+    },
+    {
+      title: 'To Think Like a Vertex (or Not) for Distributed Training of Graph Neural Networks',
+      conferenceName: '2023 IEEE/ACM 23rd International Symposium on Cluster, Cloud and Internet Computing Workshops (CCGridW)',
+      journalName: '',
+      authors: 'Varad Kulkarni, Akarsh Chaturvedi, Pranjal Naman, Yogesh Simmhan',
+      link: 'https://ieeexplore.ieee.org/document/10181148/authors#authors',
+      description: 'We propose a novel middleware that approaches GNN training from the perspective of a vertex-centric model (VCM) of distributed graph processing and overlays neural network training over it. Giraph Graph Neural Network (G2N2) uses a three-phase execution pattern by constructing a distributed computation graph per mini-batch, and maps the forward and backward passes of the GNN training to VCM. We implement a prototype of G2N2 in Apache Giraph and report results from a preliminary evaluation using two real-world graphs on a commodity cluster.' 
+    },
+    {
+      title: 'Seizure Detection from Intracranial Electroencephalography Recordings',
+      conferenceName: 'International Conference on Innovative Computing and Communications',
+      journalName: 'Advances in Intelligent Systems and Computing (AISC, Volume 1166)',
+      authors: 'Pranjal Naman, Satyarth Vats, Raunaq Bhalla, Monarch Batra, Smriti Srivastava',
+      link: 'https://link.springer.com/chapter/10.1007/978-981-15-5148-2_75',
+      description: ''
     },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    source: '', // medium | dev
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
