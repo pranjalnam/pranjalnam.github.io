@@ -130,7 +130,7 @@ const CONFIG = {
   educations: [
     {
       institution: 'Netaji Subhas Institute of Technology (NSIT), Delhi',
-      degree: 'Bachelor's in Engineering (B.E.)',
+      degree: 'Bachelor of Engineering (B.E.)',
       from: '2016',
       to: '2020',
     },
