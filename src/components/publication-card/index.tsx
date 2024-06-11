@@ -87,7 +87,7 @@ const PublicationCard = ({
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="text-xl-content opacity-60 mb-2">{item.title}</h2>
+                  <h2 className="font-sans font-medium opacity-90 mb-2">{item.title}</h2>
                   {item.conferenceName && (
                     <p className="text-base-content opacity-50 text-sm">
                       {item.conferenceName}
