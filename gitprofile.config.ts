@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -57,18 +57,17 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'pranjal-naman-136894162',
-    twitter: 'arif_szn',
+    linkedin: 'pranjalnaman',
+    twitter: 'pranjalnaman_',
     researchGate: '',
-    facebook: '',
-    instagram: 'pranjalnam_',
+    orcid: '0009-0000-9912-9522',
+    instagram: 'pranjalnaman_',
     reddit: '',
-    threads: '',
+    threads: 'pranjalnaman_',
     youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
     medium: '',
-    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
@@ -135,7 +134,7 @@ const CONFIG = {
       to: '2020',
     },
     {
-      institution: 'Indian Institute of Science, Bengaluru',
+      institution: 'Indian Institute of Science (IISc), Bengaluru',
       degree: 'Doctor of Philosophy (Ph.D.)',
       from: '2022',
       to: 'Present',
@@ -259,7 +258,7 @@ const CONFIG = {
       rel="noreferrer"
     >GitProfile</a> and ❤️`,
 
-  enablePWA: true,
+  enablePWA: false,
 };
 
 export default CONFIG;
