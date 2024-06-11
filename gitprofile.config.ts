@@ -175,11 +175,7 @@ const CONFIG = {
       title: 'Optimizing Federated Learning using Remote Embeddings for Graph Neural Networks',
       conferenceName: '2024 30th International European Conference on Parallel and Distributed Computing (Euro-PAR)',
       journalName: '',
-      authors: `<a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    > Pranjal Naman </a>, Yogesh Simmhan`,
+      authors: 'Pranjal Naman, Yogesh Simmhan',
       link: '',
       description: 'In this paper, we present OpES, an optimized federated GNN training framework that uses remote neighbourhood pruning, and overlaps pushing of embeddings to the server with local training to reduce the network costs and training time. The modest drop in per-round accuracy due to the pre-emptive push of embeddings is out-stripped by the reduction in per-round training time for large and dense graphs like Reddit and Products, converging up to ≈ 2× faster than the state-of-the-art technique using an embedding server and giving up to 20% better accuracy than vanilla federated GNN learning.',
     },
