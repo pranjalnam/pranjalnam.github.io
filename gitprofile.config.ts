@@ -33,20 +33,18 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Optimizing Distributed Training for Heterogeneous Environments',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'The ever-increasing size of data demands large-scale distributed training. However, existing methods for neural network training in a distributed setup are not well-suited for heterogeneous clusters and suffer from stragglers and/or staleness. This project proposes three new distributed training paradigms, namely g-ARAR, g-ARPS, and mw-PR, based loosely on the  Grouped Stale Synchronous Parallel and Partial-Reduce concepts, that effectively mitigate the impact of stragglers. We examine the convergence, scalability, dependence on hyperparameters, and average epoch time breakdown of these methods.',
+          imageUrl:'',
+          link: '',
         },
         {
-          title: 'Project Name',
+          title: 'Mitigating the Effect of Stragglers in Distributed Heterogenous Graph Neural Network Training',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'This project extends a previous project titled `Optimizing Distributed Training for Heterogeneous Environments` to the unique needs of distributed and heterogeneous GNN training.',
+          imageUrl:'',
+          link: '',
         },
       ],
     },
@@ -80,20 +78,6 @@ const CONFIG = {
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
   ],
   experiences: [
     {
