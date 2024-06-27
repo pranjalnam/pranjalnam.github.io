@@ -46,6 +46,20 @@ const CONFIG = {
           imageUrl:'',
           link: '',
         },
+        {
+          title: 'Distributed Memory Implementations of The Delta-Stepping Algorithm',
+          description:
+            'The Delta-Stepping algorithm is a distance correcting algorithm to calculate the shortest paths from the source node to all possible reachable nodes. This project implements a distributed memory implementation of the delta-stepping algorithm using MPI and present scalability experiments to show the efficacy of the implementation.',
+          imageUrl:'',
+          link: '',
+        },
+        {
+          title: 'Hybrid Implementation of the K-means Clustering Algorithm',
+          description:
+            'K-means algorithm is a centroid-based clustering algorithm used to iteratively partition an N-dimensional data set into K clusters. This project present incremental parallel implementations of the K-means algorithm using OpenMP, MPI and CUDA. The project shows incremental improvements over the sequential algorithm, as well as the scalability experiments to back up the efficacy of the parallel hybrid implementation.',
+          imageUrl:'',
+          link: '',
+        },
       ],
     },
   },
