@@ -170,6 +170,14 @@ const CONFIG = {
   ],
   publications: [
     {
+      title: 'Topology Aware Aggregation for Federated Graph Learning',
+      conferenceName: '2024 30th International European Conference on Parallel and Distributed Computing: Parallel Processing Workshops',
+      journalName: '',
+      authors: 'Pranjal Naman, Yogesh Simmhan',
+      link: '',
+      description: 'While FGL has seen focused research interest in recent years, with several new frameworks proposed and existing federated learning (FL) frameworks adding support for FGL, few works have attempted to adapt the standard FL components, such as client selection and aggregation for the specific application of FGL. We present a preliminary study on adapting the standard aggregation algorithms used in FL for FGL by leveraging graph topology. This study is part of a broader objective to explore solutions for a resource-efficient, robust, and scalable FGL framework.',
+    },
+    {
       title: 'Optimizing Federated Learning using Remote Embeddings for Graph Neural Networks',
       conferenceName: '2024 30th International European Conference on Parallel and Distributed Computing (Euro-PAR)',
       journalName: '',
