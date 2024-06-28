@@ -171,7 +171,7 @@ const CONFIG = {
   publications: [
     {
       title: 'Topology Aware Aggregation for Federated Graph Learning',
-      conferenceName: '2024 30th International European Conference on Parallel and Distributed Computing: Parallel Processing Workshops',
+      conferenceName: '2024 30th International European Conference on Parallel and Distributed Computing: Parallel Processing Workshops (Euro-PARW)',
       journalName: '',
       authors: 'Pranjal Naman, Yogesh Simmhan',
       link: '',
