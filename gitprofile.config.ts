@@ -36,29 +36,29 @@ const CONFIG = {
           title: 'Optimizing Distributed Training for Heterogeneous Environments',
           description:
             'The ever-increasing size of data demands large-scale distributed training. However, existing methods for neural network training in a distributed setup are not well-suited for heterogeneous clusters and suffer from stragglers and/or staleness. This project proposes three new distributed training paradigms, namely g-ARAR, g-ARPS, and mw-PR, based loosely on the  Grouped Stale Synchronous Parallel and Partial-Reduce concepts, that effectively mitigate the impact of stragglers. We examine the convergence, scalability, dependence on hyperparameters, and average epoch time breakdown of these methods.',
-          imageUrl:'',
-          link: '',
+          // imageUrl:'',
+          // link: '',
         },
         {
           title: 'Mitigating the Effect of Stragglers in Distributed Heterogenous Graph Neural Network Training',
           description:
             'This project extends a previous project titled `Optimizing Distributed Training for Heterogeneous Environments` to the unique needs of distributed and heterogeneous GNN training.',
-          imageUrl:'',
-          link: '',
+          // imageUrl:'',
+          // link: '',
         },
         {
           title: 'Distributed Memory Implementations of The Delta-Stepping Algorithm',
           description:
             'The Delta-Stepping algorithm is a distance correcting algorithm to calculate the shortest paths from the source node to all possible reachable nodes. This project implements a distributed memory implementation of the delta-stepping algorithm using MPI and present scalability experiments to show the efficacy of the implementation.',
-          imageUrl:'',
-          link: '',
+          // imageUrl:'',
+          // link: '',
         },
         {
           title: 'Hybrid Implementation of the K-means Clustering Algorithm',
           description:
             'K-means algorithm is a centroid-based clustering algorithm used to iteratively partition an N-dimensional data set into K clusters. This project present incremental parallel implementations of the K-means algorithm using OpenMP, MPI and CUDA. The project shows incremental improvements over the sequential algorithm, as well as the scalability experiments to back up the efficacy of the parallel hybrid implementation.',
-          imageUrl:'',
-          link: '',
+          // imageUrl:'',
+          // link: '',
         },
       ],
     },
