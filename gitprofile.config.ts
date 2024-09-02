@@ -73,6 +73,7 @@ const CONFIG = {
     twitter: 'pranjalnaman_',
     researchGate: '',
     orcid: '0009-0000-9912-9522',
+    googlescholar: 'https://scholar.google.com/citations?user=h1eTTwIAAAAJ&hl=en',
     instagram: 'pranjalnaman_',
     reddit: '',
     threads: 'pranjalnaman_',
