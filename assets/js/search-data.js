@@ -54,8 +54,8 @@ ninja.data = [{
           section: "News",},{id: "news-received-the-acm-iarcs-travel-grant-for-attending-icdcs-2025-in-glasgow-uk",
           title: 'Received the ACM-IARCS travel grant for attending ICDCS 2025 in Glasgow, UK.',
           description: "",
-          section: "News",},{id: "news-preprint-of-ripple-icdcs-2025-out-on-arxiv",
-          title: 'Preprint of Ripple (ICDCS 2025) out on arXiv',
+          section: "News",},{id: "news-preprint-of-ripple-scalable-incremental-gnn-inferencing-on-large-streaming-graphs-to-appear-icdcs-2025-out-on-arxiv-reach-out-if-you-d-like-to-discuss-the-paper",
+          title: 'Preprint of Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs (to appear,...',
           description: "",
           section: "News",},{
         id: 'social-email',
