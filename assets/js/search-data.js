@@ -57,6 +57,9 @@ ninja.data = [{
           section: "News",},{id: "news-preprint-of-ripple-scalable-incremental-gnn-inferencing-on-large-streaming-graphs-to-appear-icdcs-2025-out-on-arxiv-reach-out-if-you-d-like-to-discuss-the-paper",
           title: 'Preprint of Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs (to appear,...',
           description: "",
+          section: "News",},{id: "news-successfuly-passed-my-comprehensive-examination-officially-a-phd-candidate-now-sparkles-smile",
+          title: 'Successfuly passed my comprehensive examination. Officially a PhD candidate now.  :sparkles: :smile:',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
