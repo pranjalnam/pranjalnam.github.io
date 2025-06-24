@@ -60,6 +60,9 @@ ninja.data = [{
           section: "News",},{id: "news-successfuly-passed-my-comprehensive-examination-officially-a-phd-candidate-now-sparkles-smile",
           title: 'Successfuly passed my comprehensive examination. Officially a PhD candidate now.  :sparkles: :smile:',
           description: "",
+          section: "News",},{id: "news-attending-microsoft-research-ai-summit-2025-at-msr-office-bangalore-24-25-june",
+          title: 'Attending Microsoft Research AI Summit 2025 at MSR Office, Bangalore 24-25 June.',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
