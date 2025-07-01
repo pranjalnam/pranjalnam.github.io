@@ -63,6 +63,9 @@ ninja.data = [{
           section: "News",},{id: "news-attending-microsoft-research-ai-summit-2025-at-msr-office-bangalore-24-25-june",
           title: 'Attending Microsoft Research AI Summit 2025 at MSR Office, Bangalore 24-25 June.',
           description: "",
+          section: "News",},{id: "news-paper-ripple-scalable-incremental-gnn-inferencing-on-large-streaming-graphs-selected-for-oral-presentation-at-the-indosys-symposium-2025-see-you-there",
+          title: 'Paper Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs selected for oral...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
