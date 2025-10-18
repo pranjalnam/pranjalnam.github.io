@@ -66,6 +66,12 @@ ninja.data = [{
           section: "News",},{id: "news-paper-ripple-scalable-incremental-gnn-inferencing-on-large-streaming-graphs-selected-for-oral-presentation-at-the-indosys-symposium-2025-see-you-there",
           title: 'Paper Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs selected for oral...',
           description: "",
+          section: "News",},{id: "news-preprint-of-optimes-optimizing-federated-learning-using-remote-embeddings-for-graph-neural-networks-out-on-arxiv",
+          title: 'Preprint of OptimES: Optimizing Federated Learning Using Remote Embeddings for Graph Neural Networks...',
+          description: "",
+          section: "News",},{id: "news-paper-ripple-scalable-incremental-gnn-inferencing-on-large-streaming-graphs-finally-out-on-ieeexplore",
+          title: 'Paper Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs finally out on...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
