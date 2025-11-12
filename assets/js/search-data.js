@@ -72,6 +72,9 @@ ninja.data = [{
           section: "News",},{id: "news-paper-ripple-scalable-incremental-gnn-inferencing-on-large-streaming-graphs-finally-out-on-ieeexplore",
           title: 'Paper Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs finally out on...',
           description: "",
+          section: "News",},{id: "news-will-be-discussing-the-future-of-networks-and-importance-of-academia-industry-collaboration-as-part-of-the-bell-labs-young-researchers-panel-sharing-perspectives-on-future-technology-frontiers-honored-to-be-a-part-of-the-panel",
+          title: 'Will be discussing the future of networks and importance of academia-industry collaboration as...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
