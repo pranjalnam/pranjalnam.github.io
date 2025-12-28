@@ -75,6 +75,9 @@ ninja.data = [{
           section: "News",},{id: "news-will-be-discussing-the-future-of-networks-and-importance-of-academia-industry-collaboration-as-part-of-the-bell-labs-young-researchers-panel-sharing-perspectives-on-future-technology-frontiers-honored-to-be-a-part-of-the-panel",
           title: 'Will be discussing the future of networks and importance of academia-industry collaboration as...',
           description: "",
+          section: "News",},{id: "news-our-preliminary-work-titled-a-gpu-is-all-you-need-rethinking-distributed-and-out-of-core-gnn-training-won-𝗕𝗲𝘀𝘁-𝗣𝗼𝘀𝘁𝗲𝗿-and-𝗕𝗲𝘀𝘁-𝗟𝗶𝗴𝗵𝘁𝗻𝗶𝗻𝗴-𝗧𝗮𝗹𝗸-at-the-32nd-ieee-international-conference-on-high-performance-computing-data-and-analytics-student-research-symposium-stay-tuned-for-more-updates",
+          title: 'Our preliminary work titled A GPU is All You Need: Rethinking Distributed and...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
