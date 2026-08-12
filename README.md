@@ -1,0 +1,1 @@
+Source code for Pranjal Naman's academic website. Design adapted from Jon Barron's personal website (https://jonbarron.info/, https://github.com/jonbarron/jonbarron.github.io), used with permission per its original README.

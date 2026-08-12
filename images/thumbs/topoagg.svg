@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="10" fill="#e2b7b7"/>
+  <g stroke="#555" stroke-width="1.5" fill="none" opacity="0.55">
+    <line x1="40" y1="55" x2="80" y2="40"/>
+    <line x1="80" y1="40" x2="120" y2="60"/>
+    <line x1="40" y1="55" x2="60" y2="95"/>
+    <line x1="80" y1="40" x2="95" y2="90"/>
+    <line x1="120" y1="60" x2="95" y2="90"/>
+    <line x1="60" y1="95" x2="95" y2="90"/>
+  </g>
+  <g fill="#444">
+    <circle cx="40" cy="55" r="5"/>
+    <circle cx="80" cy="40" r="5"/>
+    <circle cx="120" cy="60" r="5"/>
+    <circle cx="60" cy="95" r="5"/>
+    <circle cx="95" cy="90" r="5"/>
+  </g>
+  <text x="80" y="135" font-family="Verdana, sans-serif" font-size="16" font-weight="700" fill="#333" text-anchor="middle">TopoAgg</text>
+</svg>

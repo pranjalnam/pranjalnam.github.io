@@ -1,0 +1,281 @@
+html, body {
+  background: #fafaf8;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+strong {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+
+/* Colored-box pill labels (Education/Employment/Awards/etc.) stay compact */
+.colored-box h2 {
+  font-size: 24px;
+}
+
+.papertitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 44px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.colored-box {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/* Added: small muted note under a publication entry (e.g. "To appear", award mentions) */
+.pub-note {
+  font-size: 15px;
+  color: #777;
+}
+
+/* Added: tighter paragraph spacing (publication descriptions, bio) */
+p {
+  margin: 0.2em 0;
+}
+
+/* Added: publication type / acceptance-rate tags */
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 2px 9px;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
+.tag-conference {
+  background: rgba(23, 114, 208, 0.12);
+  border: 1px solid rgba(23, 114, 208, 0.25);
+  color: #1772d0;
+}
+
+.tag-journal {
+  background: rgba(106, 76, 147, 0.12);
+  border: 1px solid rgba(106, 76, 147, 0.25);
+  color: #6a4c93;
+}
+
+.tag-workshop {
+  background: rgba(42, 157, 143, 0.12);
+  border: 1px solid rgba(42, 157, 143, 0.25);
+  color: #2a9d8f;
+}
+
+.tag-preprint {
+  background: rgba(240, 146, 40, 0.12);
+  border: 1px solid rgba(240, 146, 40, 0.25);
+  color: #f09228;
+}
+
+.tag-rate {
+  background: rgba(23, 114, 208, 0.12);
+  border: 1px solid rgba(23, 114, 208, 0.25);
+  color: #1772d0;
+  font-weight: 600;
+}
+
+.tag-accolade {
+  background: rgba(184, 134, 11, 0.12);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  color: #b8860b;
+  font-weight: 600;
+}
+
+/* Added: bulleted list for Education/Awards/Service items */
+.point-list {
+  margin: 0.3em 0;
+  padding-left: 22px;
+}
+
+.point-list li {
+  padding: 3px 0;
+  color: #333;
+}
+
+.point-list li::marker {
+  color: #1772d0;
+}
+
+/* Added: scrollable News box (sized to show ~4 items by default) */
+.scroll-box {
+  height: 210px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 6px;
+  scrollbar-width: thin;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  color: #777;
+  font-size: 17px;
+}
+
+/* Added: Google Scholar metrics widget */
+.scholar-box {
+  height: 210px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 6px;
+  scrollbar-width: thin;
+}
+
+.scholar-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scholar-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.scholar-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scholar-box-header {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.scholar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.scholar-table td {
+  padding: 2px 6px 2px 0;
+  text-align: right;
+}
+
+.scholar-table td:first-child {
+  text-align: left;
+  color: #555;
+}
+
+.scholar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 70px;
+  gap: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+}
+
+.scholar-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.scholar-bar {
+  width: 60%;
+  background: #1772d0;
+  border-radius: 2px 2px 0 0;
+  min-height: 2px;
+}
+
+.scholar-bar-col span {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
