@@ -66,18 +66,16 @@
                   </div>
                   <table class="scholar-table">
                     <tr><td></td><td><strong>All</strong></td><td><strong>Since 2021</strong></td></tr>
-                    <tr><td>Citations</td><td>25</td><td>25</td></tr>
-                    <tr><td>h-index</td><td>3</td><td>3</td></tr>
-                    <tr><td>i10-index</td><td>0</td><td>0</td></tr>
+                    <tr><td>Citations</td><td id="sch-citations-all">27</td><td id="sch-citations-recent">27</td></tr>
+                    <tr><td>h-index</td><td id="sch-hindex-all">3</td><td id="sch-hindex-recent">3</td></tr>
+                    <tr><td>i10-index</td><td id="sch-i10-all">0</td><td id="sch-i10-recent">0</td></tr>
                   </table>
-                  <div class="scholar-chart">
-                    <div class="scholar-bar-col"><div class="scholar-bar" style="height:0%;"></div><span>2022</span></div>
-                    <div class="scholar-bar-col"><div class="scholar-bar" style="height:0%;"></div><span>2023</span></div>
+                  <div class="scholar-chart" id="sch-chart">
                     <div class="scholar-bar-col"><div class="scholar-bar" style="height:9%;"></div><span>2024</span></div>
                     <div class="scholar-bar-col"><div class="scholar-bar" style="height:9%;"></div><span>2025</span></div>
                     <div class="scholar-bar-col"><div class="scholar-bar" style="height:100%;"></div><span>2026</span></div>
                   </div>
-                  <div class="pub-note" style="text-align:right;">Last updated 2026-08-12</div>
+                  <div class="pub-note" style="text-align:right;">Last updated <span id="sch-updated">2026-08-17</span></div>
                 </div>
               </td>
             </tr>
@@ -443,6 +441,38 @@
       </tr>
     </tbody></table>
 
+    <script>
+      // Populates the citation stats box from data/scholar_stats.json, which is
+      // refreshed periodically by .github/workflows/update-scholar-stats.yml.
+      // If the fetch fails (e.g. offline, opened via file://), the static
+      // values already in the markup are left as-is.
+      fetch('data/scholar_stats.json', {cache: 'no-store'})
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (d) {
+          var set = function (id, val) {
+            var el = document.getElementById(id);
+            if (el && val !== undefined && val !== null) el.textContent = val;
+          };
+          set('sch-citations-all', d.citations_all);
+          set('sch-citations-recent', d.citations_recent);
+          set('sch-hindex-all', d.h_index_all);
+          set('sch-hindex-recent', d.h_index_recent);
+          set('sch-i10-all', d.i10_index_all);
+          set('sch-i10-recent', d.i10_index_recent);
+          set('sch-updated', d.last_updated);
+
+          if (Array.isArray(d.yearly) && d.yearly.length) {
+            var years = d.yearly.slice(-5);
+            var max = Math.max.apply(null, years.map(function (y) { return y.citations; }), 1);
+            var chart = document.getElementById('sch-chart');
+            chart.innerHTML = years.map(function (y) {
+              var pct = Math.round((y.citations / max) * 100);
+              return '<div class="scholar-bar-col"><div class="scholar-bar" style="height:' + pct + '%;"></div><span>' + y.year + '</span></div>';
+            }).join('');
+          }
+        })
+        .catch(function () {});
+    </script>
     <script data-goatcounter="https://pranjalnaman.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </body>

@@ -54,8 +54,8 @@ def parse_headline_stats(soup: BeautifulSoup):
 
 def parse_yearly_chart(soup: BeautifulSoup):
     """Returns a list of {"year": int, "citations": int} or None if not found."""
-    years = [s.get_text(strip=True) for s in soup.select("#gsc_g_hist_x .gsc_g_t")]
-    bars = soup.select("#gsc_g_hist_b a.gsc_g_a")
+    years = [s.get_text(strip=True) for s in soup.select(".gsc_md_hist_b .gsc_g_t")]
+    bars = soup.select(".gsc_md_hist_b a.gsc_g_a")
     if not years or not bars or len(years) != len(bars):
         return None
     out = []

@@ -1,0 +1,40 @@
+name: Update Scholar stats
+
+on:
+  schedule:
+    # Twice daily, 06:00 and 18:00 UTC. The scraper is defensive (see
+    # fetch_scholar_stats.py docstring) so an occasional CAPTCHA'd run just
+    # no-ops instead of corrupting the data.
+    - cron: '0 6,18 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch citation stats
+        run: python scripts/fetch_scholar_stats.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data/scholar_stats.json; then
+            echo "No changes to citation stats."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scholar_stats.json
+          git commit -m "Update Scholar citation stats"
+          git push
