@@ -28,6 +28,15 @@ HEADERS = {
 }
 
 
+def is_scholar_block_error(exc: requests.RequestException) -> bool:
+    status_code = getattr(getattr(exc, "response", None), "status_code", None)
+    if status_code in (403, 429):
+        return True
+
+    msg = str(exc)
+    return ("403 Client Error" in msg or "429 Client Error" in msg) and "for url:" in msg
+
+
 def fetch_html() -> str:
     resp = requests.get(URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -73,12 +82,15 @@ def main():
     try:
         html = fetch_html()
     except requests.HTTPError as e:
-        if getattr(e.response, "status_code", None) == 403:
+        if is_scholar_block_error(e):
             print(f"Scholar blocked request (403): {URL}", file=sys.stderr)
             sys.exit(0)
         print(f"Fetch failed: {e}", file=sys.stderr)
         sys.exit(1)
     except requests.RequestException as e:
+        if is_scholar_block_error(e):
+            print(f"Scholar blocked request (403): {URL}", file=sys.stderr)
+            sys.exit(0)
         print(f"Fetch failed: {e}", file=sys.stderr)
         sys.exit(1)
 
