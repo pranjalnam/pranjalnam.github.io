@@ -9,9 +9,8 @@ isn't found, this script exits without touching the JSON file, so a bad fetch
 never overwrites good data with zeros or an error.
 """
 import json
-import re
 import sys
-from datetime import date, timezone, datetime
+from datetime import timezone, datetime
 from pathlib import Path
 
 import requests
@@ -73,6 +72,12 @@ def parse_yearly_chart(soup: BeautifulSoup):
 def main():
     try:
         html = fetch_html()
+    except requests.HTTPError as e:
+        if getattr(e.response, "status_code", None) == 403:
+            print(f"Scholar blocked request (403): {URL}", file=sys.stderr)
+            sys.exit(0)
+        print(f"Fetch failed: {e}", file=sys.stderr)
+        sys.exit(1)
     except requests.RequestException as e:
         print(f"Fetch failed: {e}", file=sys.stderr)
         sys.exit(1)
@@ -81,7 +86,7 @@ def main():
     stats = parse_headline_stats(soup)
     if stats is None:
         print("Could not parse headline stats (possibly blocked/CAPTCHA'd). Leaving existing data untouched.", file=sys.stderr)
-        sys.exit(1)
+        sys.exit(0)
 
     yearly = parse_yearly_chart(soup)
     if yearly is None:
