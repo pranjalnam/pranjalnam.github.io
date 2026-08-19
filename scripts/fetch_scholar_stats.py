@@ -34,7 +34,7 @@ def is_scholar_block_error(exc: requests.RequestException) -> bool:
         return True
 
     msg = str(exc)
-    return "scholar.google.com" in msg and ("403" in msg or "429" in msg)
+    return ("403 Client Error" in msg or "429 Client Error" in msg) and "for url:" in msg
 
 
 def fetch_html() -> str:
