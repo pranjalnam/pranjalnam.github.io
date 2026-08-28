@@ -4,6 +4,7 @@ Fetches citation stats from Google Scholar via scholarly and writes them
 to data/scholar_stats.json. Run daily via .github/workflows/update-scholar-stats.yml.
 """
 import json
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,13 +21,33 @@ def to_int(value, default=0) -> int:
         return default
 
 
+def load_existing():
+    if OUT_PATH.exists():
+        try:
+            return json.loads(OUT_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return None
+    return None
+
+
 def main() -> int:
+    now = datetime.now(timezone.utc)
+
     try:
-        author = scholarly.search_author_id(SCHOLAR_USER_ID)
+        raw = scholarly.search_author_id(SCHOLAR_USER_ID)
+        # Handle both iterator and direct-dict behaviors across versions
+        author = next(raw) if not isinstance(raw, dict) and hasattr(raw, "__iter__") else raw
         author = scholarly.fill(author)
     except Exception as exc:
         print(f"[warn] Scholar fetch failed: {exc}")
-        return 0
+        traceback.print_exc()
+
+        existing = load_existing()
+        if existing is not None:
+            print("[info] Keeping existing data/scholar_stats.json unchanged.")
+        else:
+            print("[error] No existing scholar_stats.json to keep.")
+        return 1  # fail workflow so breakages are visible
 
     cites_per_year = author.get("cites_per_year") or {}
     yearly = [
@@ -44,9 +65,8 @@ def main() -> int:
     data = {
         "name": author.get("name"),
         "profile_url": f"https://scholar.google.com/citations?user={SCHOLAR_USER_ID}&hl=en",
-        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "updated_at": now.isoformat(),
 
-        # New nested structure
         "citations": {
             "all": citations_all,
             "since_2021": citations_recent,
@@ -60,18 +80,17 @@ def main() -> int:
             "since_2021": i10_index_recent,
         },
 
-        # Raw + normalized yearly data
         "cites_per_year": {str(k): to_int(v, 0) for k, v in cites_per_year.items()},
         "yearly": yearly,
 
-        # Backward-compatible keys (for existing frontend code)
+        # Backward-compatible keys
         "citations_all": citations_all,
         "citations_recent": citations_recent,
         "h_index_all": h_index_all,
         "h_index_recent": h_index_recent,
         "i10_index_all": i10_index_all,
         "i10_index_recent": i10_index_recent,
-        "last_updated": datetime.now(timezone.utc).date().isoformat(),
+        "last_updated": now.date().isoformat(),
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
